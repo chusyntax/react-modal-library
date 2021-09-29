@@ -22,6 +22,7 @@ const classes = useStyles();
             <CardContent>
 
                  <Typography variant="h5" gutterBottom>{place.name}</Typography>
+
                 <Box display="flex" justifyContent="space-between">
                     <Typography variant="subtitle1">
                         Avg. Price
@@ -29,7 +30,13 @@ const classes = useStyles();
                     <Typography variant="subtitle1">
                         {place.price_level}
                     </Typography>
-                    
+                </Box>
+
+                <Box display="flex" justifyContent="space-between">
+                <Rating  value={Number(place.rating)} readOnly/>
+                    <Typography variant="subtitle1">
+                        out of {place.num_reviews} reviews
+                    </Typography>
                 </Box>
 
 
