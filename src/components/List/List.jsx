@@ -75,7 +75,7 @@ const refs = Array(places?.length).fill().map((_,i)=> elRefs[i] || createRef());
        ))}
        
        </Grid>
-        )
+        
        </>
         )}
        </div>
